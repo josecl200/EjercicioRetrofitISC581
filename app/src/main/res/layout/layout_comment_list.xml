@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#E6FAE6"
+        app:cardElevation="5dp"
+        app:contentPadding="10dp"
+        app:cardUseCompatPadding="true"
+>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:text="Por:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/por" android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/por2"
+                app:layout_constraintVertical_bias="0.0" android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.002"
+                android:layout_marginStart="8dp"/>
+        <TextView
+                android:text="Contacto:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/por2" android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                android:layout_marginStart="8dp" app:layout_constraintVertical_bias="0.408"/>
+        <TextView
+                android:text="nombreComentario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/nombreComentario"
+                app:layout_constraintStart_toEndOf="@+id/por" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0" android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.0"
+                android:layout_marginTop="8dp"/>
+        <TextView
+                android:text="emailComentario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/emailComentario"
+                app:layout_constraintStart_toEndOf="@+id/por2" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintBottom_toTopOf="@+id/divider" android:layout_marginBottom="4dp"
+                app:layout_constraintTop_toBottomOf="@+id/nombreComentario" android:layout_marginEnd="8dp"
+                app:layout_constraintVertical_bias="0.50"/>
+        <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/cuerpoComentario"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="14dp" app:layout_constraintTop_toBottomOf="@+id/divider"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="14dp"/>
+        <View
+                android:id="@+id/divider"
+                android:layout_width="374dp"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.6"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
